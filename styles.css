@@ -1,0 +1,23 @@
+root{
+    --background-colour: #E1D5C9;
+    --project-background-colour: #B86975;
+    --text-background-colour: #ffffff;
+    --text-font-colour: #333333;
+
+    --headings-font: "Shippori Mincho", sans-serif;
+    --dash-text-font: "Ubuntu", sans-serif;
+    --general-text-font: "Rubik", sans-serif;
+    --nav-font: "Lexend", sans-serif;
+
+    --fw-xlight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
