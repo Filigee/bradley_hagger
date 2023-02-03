@@ -1,4 +1,4 @@
-root{
+:root{
     --background-colour: #E1D5C9;
     --project-background-colour: #B86975;
     --text-background-colour: #ffffff;
@@ -16,8 +16,36 @@ root{
     --fw-bold: 700;
 }
 
+html{
+    font-size: 10px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    color: var(--text-font-colour);
 }
+
+.nav__wrapper{
+    display: flex;
+    min-width: 360px;
+    width: 100vw;
+    height: 800px;
+    background: var(--background-colour);
+}
+
+.nav__links{
+    display: flex;
+}
+
+.title{
+    font-family: var(--headings-font);
+    font-size: 4rem;
+    font-weight: var(--fw-bold);
+    line-height: 100.9%;
+    text-indent: -10px;
+}
+
+
