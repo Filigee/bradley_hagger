@@ -28,24 +28,84 @@ html{
     color: var(--text-font-colour);
 }
 
-.nav__wrapper{
-    display: flex;
+/* ------------- NAV & HERO ------------ */
+
+.hero__wrapper{
     min-width: 360px;
     width: 100vw;
     height: 800px;
     background: var(--background-colour);
 }
 
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav__links{
     display: flex;
 }
 
-.title{
+.nav__title{
     font-family: var(--headings-font);
     font-size: 4rem;
     font-weight: var(--fw-bold);
     line-height: 100.9%;
     text-indent: -10px;
+    margin: 23px 23px 0 0;
+}
+
+.hero-text__wrapper{
+    position: relative;
+    z-index: 1;
+    width: 297px;
+    height: 387px;
+    background: var(--text-background-colour);
+    margin-inline: auto;
+    margin-top: 41px;
+}
+
+.hero-text__wrapper > * {
+    margin: 16px 0 0 8px;
+}
+
+.dash{
+    width: 48px;
+    height: 1px;
+    background: var(--text-font-colour);
+    margin-top: 13px;
+}
+
+.hero-text__hello__container{
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    padding-top: 16px;
+}
+
+.hero-text__hello{
+    font-family: var(--dash-text-font);
+    font-size: 2.4rem;
+    font-weight: var(--fw-bold);
+    padding-left: 12px;
+}
+
+.hero-text__title{
+    font-family: var(--general-text-font);
+    font-size: 4.6rem;
+    font-weight: var(--fw-regular);
+}
+
+.hero-text__headline{
+    font-family: var(--general-text-font);
+    font-size: 2.9rem;
+    font-weight: var(--fw-regular);
+}
+
+.img-bradley__mobile{
+    display: block;
+    margin-top: -122px;
+    margin-inline: auto;
 }
 
 
