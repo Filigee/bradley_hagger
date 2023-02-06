@@ -104,8 +104,74 @@ html{
 
 .img-bradley__mobile{
     display: block;
-    margin-top: -122px;
+    margin-top: -30px;
     margin-inline: auto;
 }
 
+/* PROJECTS */
+
+.projects-title{
+    font-family: var(--headings-font);
+    font-size: 3.4rem;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin-top: 28px;
+}
+
+.project__img__container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--project-background-colour);
+    width: 300px;
+    height: 300px;
+    margin-inline: auto;
+    margin-top: 53px;
+}
+
+.project__text__container{
+    width: 280px;
+    height: 381px;
+    background: var(--background-colour);
+    margin-inline: auto;
+    margin-top: -20px;
+}
+
+.project__title{
+    font-family: var(--headings-font);
+    font-size: 2.4rem;
+    font-weight: var(--fw-bold);
+    padding-top: 36px;
+    text-align: center;
+}
+
+.project__skills__container{
+    display: flex;
+    width: 256px;
+    height: 21px;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+.project__skills__container > .dash{
+    margin-top: 11px;
+}
+
+.project__skills{
+    font-family: var(--dash-text-font);
+    font-size: 1.8rem;
+    font-weight: var(--fw-bold);
+    margin-left: 18px;
+}
+
+.project__description{
+    font-family: var(--general-text-font);
+    font-size: 2.2rem;
+    font-weight: var(--fw-light);
+    margin: 20px 0 0 10px;
+}
+
+/* --------- ABOUT ----------- */
 
