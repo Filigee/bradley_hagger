@@ -28,6 +28,16 @@ html{
     color: var(--text-font-colour);
 }
 
+/* ---------- GLOBAL ----------- */
+
+.section-title{
+    font-family: var(--headings-font);
+    font-size: 3.4rem;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin-top: 28px;
+}
+
 /* ------------- NAV & HERO ------------ */
 
 .hero__wrapper{
@@ -110,14 +120,6 @@ html{
 
 /* PROJECTS */
 
-.projects-title{
-    font-family: var(--headings-font);
-    font-size: 3.4rem;
-    font-weight: var(--fw-bold);
-    text-align: center;
-    margin-top: 28px;
-}
-
 .project__img__container{
     position: relative;
     z-index: 1;
@@ -175,3 +177,67 @@ html{
 
 /* --------- ABOUT ----------- */
 
+.about__wrapper{
+    margin-top: 81px;
+    min-width: 360px;
+    width: 100vw;
+    height: 800px;
+    background: var(--background-colour);
+    border: 1px solid var(--background-colour);
+}
+
+.about__container{
+    width: 301px;
+    height: 629px;
+    background: white;
+    margin-inline: auto;
+    margin-top: 49px;
+    border: 1px solid white;
+}
+
+.about__headline__container{
+    display: flex;
+    width: 100%;
+    height: 21px;
+    margin-top: 28px;
+    margin-inline: auto;
+}
+
+.about__headline__container > .dash{
+    margin-left: 11px;
+}
+
+.about__headline{
+    font-family: var(--dash-text-font);
+    font-size: 2.2rem;
+    font-weight: var(--fw-bold);
+    margin-left: 12px;
+}
+
+.about__text{
+    font-family: var(--general-text-font);
+    font-size: 1.8rem;
+    font-weight: var(--fw-light);
+    margin: 28px 12px 0 10px;
+}
+
+.about__email__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.about__email{
+    font-family: var(--general-text-font);
+    font-size: 1.6rem;
+    font-weight: var(--fw-light);
+    margin-left: 17px;
+}
+
+.about__socials__container{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 35px;
+}
