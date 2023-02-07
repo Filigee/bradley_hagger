@@ -38,7 +38,7 @@ html{
     margin-top: 28px;
 }
 
-/* ------------- NAV & HERO ------------ */
+/* ------------- NAV ------------ */
 
 .hero__wrapper{
     min-width: 360px;
@@ -65,6 +65,20 @@ html{
     margin: 23px 23px 0 0;
 }
 
+@media screen and (min-width: 680px){
+    .hero__wrapper{
+        height: 1194px;
+    }
+
+    .nav__title{
+        font-size: 4.8rem;
+        margin-inline: auto;
+        margin-top: 38px;
+    }
+}
+
+/* ---------- HERO --------------- */
+
 .hero-text__wrapper{
     position: relative;
     z-index: 1;
@@ -88,8 +102,8 @@ html{
 
 .hero-text__hello__container{
     display: flex;
-    width: 100vw;
-    height: 40px;
+    width: 147px;
+    height: 50px;
     padding-top: 16px;
 }
 
@@ -98,12 +112,14 @@ html{
     font-size: 2.4rem;
     font-weight: var(--fw-bold);
     padding-left: 12px;
+    height: 40px;
 }
 
 .hero-text__title{
     font-family: var(--general-text-font);
     font-size: 4.6rem;
     font-weight: var(--fw-regular);
+    margin-top: 13px;
 }
 
 .hero-text__headline{
@@ -112,10 +128,44 @@ html{
     font-weight: var(--fw-regular);
 }
 
-.img-bradley__mobile{
+.img-bradley{
     display: block;
     margin-top: -30px;
     margin-inline: auto;
+}
+
+@media screen and (min-width: 680px){
+    .hero-text__wrapper{
+        width: 462px;
+        height: 386px;
+        margin-top: 76px;
+    }
+
+    .hero-text__hello__container{
+        height: 56px;
+    }
+
+    .dash{
+        height: 2px;
+    }
+
+    .hero-text__hello{
+        font-size: 3.4rem;
+    }
+
+    .hero-text__title{
+        font-size: 7.4rem;
+    }
+
+    .hero-text__headline{
+        font-size: 4rem;
+    }
+
+    .img-bradley{
+        content: url(imgs/1920_picofme.jpg);
+        width: 429px;
+        height: 536px;
+    }
 }
 
 /* PROJECTS */
