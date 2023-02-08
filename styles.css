@@ -101,7 +101,7 @@ html{
 
     .nav__wrapper{
         width: 866px;
-        height: 96px;
+        height: 141px;
         margin-inline: auto;
         padding-top: 45px;
         align-items: center;
@@ -188,6 +188,10 @@ html{
         margin-top: 76px;
     }
 
+    .hero-text__wrapper > * {
+        margin: 16px 0 0 13px;
+    }
+
     .hero-text__hello__container{
         height: 56px;
     }
@@ -215,7 +219,28 @@ html{
 }
 
 @media screen and (min-width: 920px){
-    
+    .hero-content__wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 866px;
+        height: 536px;
+        margin-inline: auto;
+        margin-top: 88px;
+    }
+
+    .hero-text__wrapper{
+        position: relative;
+        z-index: 1;
+        margin-left: -20px;
+    }
+
+    .hero-text__hello__container{
+        margin-top: 0;
+    }
+
+    .img-bradley{
+        margin-top: 1px;
+    }
 }
 
 /* PROJECTS */
