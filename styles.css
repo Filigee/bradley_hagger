@@ -49,6 +49,10 @@ html{
     .section-title{
         font-size: 4.8rem;
     }
+
+    .dash{
+        margin-top: 18px;
+    }
 }
 
 /* ------------- NAV ------------ */
@@ -87,6 +91,41 @@ html{
         font-size: 4.8rem;
         margin-inline: auto;
         margin-top: 38px;
+    }
+}
+
+@media screen and (min-width: 920px){
+    .hero__wrapper{
+        height: 1024px;
+    }
+
+    .nav__wrapper{
+        width: 866px;
+        height: 96px;
+        margin-inline: auto;
+        padding-top: 45px;
+        align-items: center;
+    }
+
+    .nav__title{
+        margin: 0;
+    }
+
+    .nav__links__link{
+        font-family: 'Lexend';
+        font-size: 2.4rem;
+        font-weight: var(--fw-xlight);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .nav__links__separator{
+        font-size: 2.4rem;
+        opacity: 30%;
+    }
+
+    .nav__links{
+        gap: 11px;
     }
 }
 
@@ -173,6 +212,10 @@ html{
         width: 411px;
         height: 548px;
     }
+}
+
+@media screen and (min-width: 920px){
+    
 }
 
 /* PROJECTS */
@@ -277,6 +320,7 @@ html{
 
     .project__skills__container > .dash{
         height: 2px;
+        margin-top: 18px;
     }
 
     .project__skills{
