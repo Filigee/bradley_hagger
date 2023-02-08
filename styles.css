@@ -45,13 +45,19 @@ html{
     margin-top: 13px;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 600px){
     .section-title{
         font-size: 4.8rem;
     }
 
     .dash{
         margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 920px){
+    .section-title{
+        margin-top: 72px;
     }
 }
 
@@ -82,7 +88,7 @@ html{
     margin: 23px 23px 0 0;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 600px){
     .hero__wrapper{
         height: 1194px;
     }
@@ -96,7 +102,7 @@ html{
 
 @media screen and (min-width: 920px){
     .hero__wrapper{
-        height: 1024px;
+        height: 940px;
     }
 
     .nav__wrapper{
@@ -181,7 +187,7 @@ html{
     margin-inline: auto;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 600px){
     .hero-text__wrapper{
         width: 462px;
         height: 386px;
@@ -305,7 +311,7 @@ html{
     margin: 20px 0 0 10px;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 600px){
     .project__img__container{
         width: 500px;
         height: 500px;
@@ -356,6 +362,57 @@ html{
         font-size: 3.2rem;
         margin: 35px 0 0 0;
     }
+}
+
+@media screen and (min-width: 920px){
+    .project-one__wrapper, .project-two__wrapper{
+        display: flex;
+        width: 866px;
+        height: 545px;
+        margin-inline: auto;
+        margin-bottom: 180px;
+        background: var(--background-colour);
+    }
+
+    .project-one__wrapper{
+        margin-top: 180px;
+        flex-direction: row-reverse;
+    }
+
+    .project__img__container{
+        margin-top: -60px;
+    }
+
+    .project__text__container{
+        width: 364px;
+        margin-top: 0;
+        background: none;
+    }
+
+    .project__text__wrapper{
+        width: 320px;
+        height: 545px;
+    }
+
+    .project__text__wrapper > *{
+        inline-size: 320px;
+    }
+
+    .project__title{
+        letter-spacing: 1px;
+        padding-top: 30px;
+    }
+
+    .project__skills__container{
+        margin: 35px 0;
+        height: fit-content;
+    }
+
+    .project__description{
+        font-size: 2.8rem;
+        margin: 0;
+    }
+    
 }
 
 /* --------- ABOUT ----------- */
@@ -430,7 +487,7 @@ html{
     height: 35px;
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 600px){
     .about__wrapper{
         height: 1194px;
     }
