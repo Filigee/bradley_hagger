@@ -45,6 +45,10 @@ html{
     margin-top: 13px;
 }
 
+.hidden{
+    display: none;
+}
+
 @media screen and (min-width: 600px){
     .section-title{
         font-size: 4.8rem;
@@ -61,6 +65,7 @@ html{
     }
 }
 
+
 /* ------------- NAV ------------ */
 
 .hero__wrapper{
@@ -76,7 +81,7 @@ html{
 }
 
 .nav__links{
-    display: flex;
+    display: none;
 }
 
 .nav__title{
@@ -113,6 +118,10 @@ html{
         align-items: center;
     }
 
+    .nav__links{
+        display: flex;
+    }
+
     .nav__title{
         margin: 0;
     }
@@ -132,6 +141,25 @@ html{
 
     .nav__links{
         gap: 11px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .hero__wrapper{
+        height: 1080px;
+    }
+    
+    .nav__links{
+        padding-left: 12px;
+    }
+
+    .nav__container{
+        width: 1440px;
+        margin-inline: auto;
+    }
+
+    .nav__wrapper{
+        margin-inline: 0;
     }
 }
 
@@ -246,6 +274,45 @@ html{
 
     .img-bradley{
         margin-top: 1px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .hero-content__wrapper{
+        width: 1440px;
+        height: fit-content;
+    }
+
+    .hero-text__wrapper{
+        width: 600px;
+        height: 445px;
+        margin: 86px 0 0 -40px;
+    }
+
+    .hero-text__wrapper > * {
+        margin: 20px 0 0 13px;
+    }
+
+    .hero-text__headline{
+        margin-right: 20px;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .img-bradley{
+        width: 480px;
+        height: 640px;
+    }
+
+    .img-cat{
+        position: relative;
+        z-index: 0;
+        width: 396px;
+        height: 594px;
+        margin: 152px 12px 0 -30px;
+
     }
 }
 
