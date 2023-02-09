@@ -524,6 +524,27 @@ html{
         width: 55px;
         height: 55px;
     }
+}
 
+@media screen and (min-width: 920px){
+    .about__wrapper{
+        height: 1213px;
+    }
 
+    .about__container{
+        width: 866px;
+        height: 700px;
+        margin-top: 120px;
+    }
+
+    .about__text{
+        font-size: 2.8rem;
+    }
+
+    .about__contacts__container{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 22px;
+        gap: 120px;
+    }
 }
