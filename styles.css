@@ -482,6 +482,33 @@ html{
     
 }
 
+@media screen and (min-width: 1440px){
+    .project-one__wrapper, .project-two__wrapper{
+        width: 1420px;
+    }
+
+    .project__text__container{
+        width: 503px;
+        margin-inline: 0;
+    }
+
+    .project__text__wrapper{
+        width: 503px;
+    }
+
+    .project__text__wrapper > *{
+        inline-size: 503px;
+    }
+
+    .project-one__wrapper > .project__text__container{
+        margin-left: 139px;
+    }
+
+    .project-two__wrapper > .project__text__container{
+        margin-right: 139px;
+    }
+}
+
 /* --------- ABOUT ----------- */
 
 .about__wrapper{
