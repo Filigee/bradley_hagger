@@ -18,6 +18,7 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -26,6 +27,7 @@ html{
     padding: 0;
     list-style-type: none;
     color: var(--text-font-colour);
+    text-decoration: none;
 }
 
 /* ---------- GLOBAL ----------- */
@@ -75,6 +77,14 @@ html{
     background: var(--background-colour);
 }
 
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 297px;
+    margin-inline: auto;
+}
+
 .nav__wrapper{
     display: flex;
     justify-content: space-between;
@@ -84,14 +94,66 @@ html{
     display: none;
 }
 
+.nav__links__link:hover{
+    opacity: 50%;
+}
+
 .nav__title{
     font-family: var(--headings-font);
     font-size: 4rem;
     font-weight: var(--fw-bold);
     line-height: 100.9%;
     text-indent: -10px;
-    margin: 23px 23px 0 0;
+    margin: 23px 0 0 0;
 }
+
+.nav__menu-button{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    margin-top: 23px;
+}
+
+.nav__menu-button__burger{
+    width: 60px;
+    height: 6px;
+    background: var(--text-font-colour);
+    transition: all .5s ease-in-out;
+}
+
+.nav__menu-button__burger::before, .nav__menu-button__burger::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: var(--text-font-colour);
+    transition: all .5s ease-in-out;
+}
+
+.nav__menu-button__burger::before{
+    transform: translateY(-16px);
+}
+
+.nav__menu-button__burger::after{
+    transform: translateY(16px);
+}
+
+/* ----------- Hamburger button animation ------------ */
+
+.nav__menu-button.nav__menu__open .nav__menu-button__burger{
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.nav__menu__open .nav__menu-button__burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.nav__menu__open .nav__menu-button__burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
 
 @media screen and (min-width: 600px){
     .hero__wrapper{
@@ -103,11 +165,20 @@ html{
         margin-inline: auto;
         margin-top: 38px;
     }
+
+    .nav__container{
+        width: 462px;
+    }
 }
 
 @media screen and (min-width: 920px){
     .hero__wrapper{
         height: 940px;
+    }
+
+    .nav__container{
+        width: 866px;
+        justify-content: start;
     }
 
     .nav__wrapper{
@@ -141,6 +212,16 @@ html{
 
     .nav__links{
         gap: 11px;
+    }
+
+    .nav__menu-button{
+        width: 0;
+        height: 0;
+    }
+
+    .nav__menu-button__burger, .nav__menu-button__burger::after, .nav__menu-button__burger::before{
+        width: 0;
+        height: 0;
     }
 }
 
@@ -582,7 +663,12 @@ html{
 }
 
 .about__socials__icon:hover{
-    transform: scale(110%);
+    transform: scale(107%);
+    opacity: 70%;
+}
+
+.about__email:hover{
+    opacity: 70%;
 }
 
 @media screen and (min-width: 600px){
