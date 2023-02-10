@@ -581,6 +581,10 @@ html{
     height: 35px;
 }
 
+.about__socials__icon:hover{
+    transform: scale(110%);
+}
+
 @media screen and (min-width: 600px){
     .about__wrapper{
         height: 1194px;
